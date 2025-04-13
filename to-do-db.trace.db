@@ -1,0 +1,9 @@
+2025-04-12 13:59:51.968836-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000d\000a    create table [*]user (\000d\000a        id bigint not null,\000d\000a        email varchar(255) not null,\000d\000a        name varchar(255) not null,\000d\000a        primary key (id)\000d\000a    )"; expected "identifier"; SQL statement:
+
+    create table user (
+        id bigint not null,
+        email varchar(255) not null,
+        name varchar(255) not null,
+        primary key (id)
+    ) [42001-232]
