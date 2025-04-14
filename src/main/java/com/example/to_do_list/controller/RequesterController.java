@@ -48,7 +48,7 @@ public class RequesterController {
     public void requesterDelete(@PathVariable ("id") Long id){
         requesterService.requesterById(id)
                 .map(requester ->{
-                    requesterService.requesterDeletebyId(id);
+                    requesterService.requesterDeleteById(id);
                     return  Void.TYPE;
                 }).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "requester not found."));
     }

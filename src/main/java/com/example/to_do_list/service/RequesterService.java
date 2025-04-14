@@ -26,7 +26,7 @@ public class RequesterService {
         return requesterRepository.findById(id);
     }
 
-    public void requesterDeletebyId(Long id){
+    public void requesterDeleteById(Long id){
         requesterRepository.deleteById(id);
     }
 
